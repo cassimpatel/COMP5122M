@@ -25,7 +25,7 @@ print()
 sorted_value_counts = df['Gender'].value_counts().sort_index()
 print("{v: <6}   {n: ^5}".format(v='Value', n='Count'))
 
-for value, count in sorted_value_counts.iteritems():
+for value, count in sorted_value_counts.items():
     print("{v: <6}   {n: ^5}".format(v=value, n=count))
 
 
@@ -35,5 +35,5 @@ print()
 quantiles = df['Mark'].dropna().quantile([0.0, 0.25, 0.5, 0.75, 1.0])
 print("{i: <10}   {v: ^5}".format(i='Percentile', v='Value'))
 
-for ind, val in quantiles.iteritems():
+for ind, val in quantiles.items():
     print("{i: <10}   {v: ^5}".format(i=ind, v=val))
