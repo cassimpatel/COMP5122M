@@ -1,3 +1,9 @@
+# Mac metadata
+.DS_Store
+
+# Coursework data
+Cleaned-Data-for-Data-Science (working on D6 and D7).csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
